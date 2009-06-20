@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd  http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>jnAjaxFormValidatorPlugin</name>
+  <channel>pear.symfony-project.com</channel>
+  <summary>Plugin for AJAX validation form widgets by theirs validators.</summary>
+  <description>The `jnAjaxFormValitatorPlugin` plugin is a symfony plugin for AJAX validation form widgets by theirs validators. Plugin requires JQuery.</description>
+  <lead>
+    <name>Tomáš Naibrt</name>
+    <user>Sajfi</user>
+    <email>tomas@naibrt.cz</email>
+    <active>yes</active>
+  </lead>
+  <date>2009-06-20</date>
+  <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license uri="http://www.symfony-project.com/license">MIT license</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+      <file role="data" name="README"/>
+      <file role="data" name="LICENSE"/>
+      <dir name="lib">
+        <dir name="helper">
+          <file role="data" name="ajaxFormValidatorHelper.php"/>
+        </dir>
+      </dir>
+      <dir name="modules">
+        <dir name="jnAjaxFormValidator">
+          <dir name="actions">
+            <file role="data" name="actions.class.php"/>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.2.4</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.2.0</min>
+        <max>1.3.0</max>
+        <exclude>1.3.0</exclude>
+      </package>
+    </required>
+  </dependencies>
+  <phprelease>
+ </phprelease>
+  <changelog>    
+    <release>
+      <version>
+        <release>1.0.0</release>
+        <api>1.0.0</api>
+      </version>
+      <stability>
+        <release>stable</release>
+        <api>stable</api>
+      </stability>
+      <license uri="http://www.symfony-project.com/license">MIT license</license>
+      <date>2009-06-20</date>
+      <license>MIT</license>
+      <notes>
+       * Sajfi: First public release
+     </notes>
+    </release>
+  </changelog>
+</package>
