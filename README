@@ -1,0 +1,39 @@
+# jnAjaxFormValitator plugin (for symfony 1.2) #
+
+The `jnAjaxFormValitatorPlugin` plugin is a symfony plugin for AJAX validation
+form widgets by theirs validators. Plugin requires JQuery.
+
+## Installation ##
+
+  * Install the plugin
+
+        symfony plugin:install jnAjaxFormValitatorPlugin
+
+  * Enable module in your `settings.yml`
+
+        all:
+          .settings:
+            enabled_modules:      [default, jnAjaxFormValitator]
+
+  * Add routing rule in your `routing.yml`
+
+        # ----- jnAjaxFormValidator -----
+        jnAjaxFormValidator_validateJSON:
+          url:   /jnAjaxFormValidator/validateJSON
+          param: { module: jnAjaxFormValidator, action: validateJSON }
+
+  * Clear you cache
+
+        symfony cc
+
+## Usage ##
+
+  * Auto AJAX validator for concrete form field
+
+        <? use_helper('ajaxFormValidator') ?>
+        <?= ajaxFieldValidator($form, 'field_name') ?>
+
+  * Auto AJAX validator for all fields from form
+
+        <? use_helper('ajaxFormValidator') ?>
+        <?= ajaxAllFieldsValidators($form) ?>
