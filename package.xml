@@ -12,7 +12,7 @@
   </lead>
   <date>2009-06-20</date>
   <version>
-    <release>1.0.0</release>
+    <release>1.0.1</release>
     <api>1.0.0</api>
   </version>
   <stability>
@@ -58,7 +58,23 @@
   </dependencies>
   <phprelease>
  </phprelease>
-  <changelog>    
+  <changelog> 
+    <release>
+      <version>
+        <release>1.0.1</release>
+        <api>1.0.1</api>
+      </version>
+      <stability>
+        <release>stable</release>
+        <api>stable</api>
+      </stability>
+      <license uri="http://www.symfony-project.com/license">MIT license</license>
+      <date>2009-06-20</date>
+      <license>MIT</license>
+      <notes>
+       * Sajfi: Update plugin description
+     </notes>
+    </release>
     <release>
       <version>
         <release>1.0.0</release>

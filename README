@@ -7,16 +7,19 @@ form widgets by theirs validators. Plugin requires JQuery.
 
   * Install the plugin
 
+        [yml]
         symfony plugin:install jnAjaxFormValitatorPlugin
 
   * Enable module in your `settings.yml`
 
+        [yml]
         all:
           .settings:
             enabled_modules:      [default, jnAjaxFormValitator]
 
   * Add routing rule in your `routing.yml`
 
+        [yml]
         # ----- jnAjaxFormValidator -----
         jnAjaxFormValidator_validateJSON:
           url:   /jnAjaxFormValidator/validateJSON
@@ -30,10 +33,12 @@ form widgets by theirs validators. Plugin requires JQuery.
 
   * Auto AJAX validator for concrete form field
 
+        [php]
         <? use_helper('ajaxFormValidator') ?>
         <?= ajaxFieldValidator($form, 'field_name') ?>
 
   * Auto AJAX validator for all fields from form
 
+        [php]
         <? use_helper('ajaxFormValidator') ?>
         <?= ajaxAllFieldsValidators($form) ?>
